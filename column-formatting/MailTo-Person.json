@@ -7,8 +7,8 @@
       "style": {
         "padding-right": "8px"
       },
-      "txtContent": "=@currentField.title + ' ' + toUpperCase(substring(@currentField.email, 0, 1)) + toLowerCase(substring(@currentField.email, 1, indexOf(@currentField.email,'.'))) + ' ' + substring(substring(@currentField.email, indexOf(@currentField.email,'.')+1, indexOf(@currentField.email,'@')),0,1) + toLowerCase(replace(substring(@currentField.email, indexOf(@currentField.email,'.')+2, indexOf(@currentField.email,'@')),'4',''))"
-    },
+      "txtContent": "=@currentField.jobTitle + ' ' + toUpperCase(substring(@currentField.email, 0, 1)) + toLowerCase(substring(@currentField.email, 1, indexOf(@currentField.email,'.'))) + ' ' + substring(substring(@currentField.email, indexOf(@currentField.email,'.')+1, indexOf(@currentField.email,'@')),0,1) + toLowerCase(replace(substring(@currentField.email, indexOf(@currentField.email,'.')+2, indexOf(@currentField.email,'@')),'4',''))"
+     },
     {
       "elmType": "a",
       "attributes": {

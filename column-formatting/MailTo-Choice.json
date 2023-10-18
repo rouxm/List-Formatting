@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "span",
+      "style": {
+        "padding-right": "8px"
+      },
+      "txtContent": "@currentField"
+    },
+    {
+      "elmType": "a",
+      "attributes": {
+        "iconName": "Mail",
+        "class": "sp-field-quickActions",
+        "href": {
+          "operator": "+",
+          "operands": [
+            "mailto:",
+            "@currentField",
+            "?subject=",
+            "[$Title]",
+            "&body=Dear ",
+            "=toUpperCase(substring(@currentField, 0, 1))",
+            "=substring(@currentField, 1, indexOf(@currentField,'.'))",
+            ",\r\n\r\n",
+            "File: '",
+            "[$Title]",
+            "' is ready for your review.",
+            "\r\n---",
+            "\r\nhttps://yourDomain.sharepoint.com",
+            "[$FileRef]"
+          ]
+        }
+      }
+    }
+  ]
+}
